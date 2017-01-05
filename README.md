@@ -1,6 +1,6 @@
 # ArcGIS For Server On Docker
 
-The following steps will bootstrap a Linux flavored [ArcGIS for Server](http://www.esri.com/software/arcgis/arcgisserver) in a [docker](https://www.docker.com/) container.
+The following steps will bootstrap a Linux (Centos) instance of [ArcGIS for Server](http://www.esri.com/software/arcgis/arcgisserver) in a [docker](https://www.docker.com/) container.
 
 ## Start A Machine
 
