@@ -21,7 +21,7 @@ echo "$(docker-machine ip arcgis) arcgis" >> /etc/hosts
 Setup the environment in such that the `docker` cli communicates with the created machine.
 
 ```bash
-eval $(docker-machine env arcgis)
+eval $(docker-machine env arcgis | Invoke-Expression)
 ```
 
 ## ArcGIS Resources
