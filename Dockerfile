@@ -25,6 +25,7 @@ EXPOSE 6080 6443 4001 4002 4004
 
 USER $USER
 
+# again, pay attention to file names from above - make sure your .prvc filename matches here
 RUN /arcgis/ArcGISServer/Setup -m silent -l yes -a /arcgis/ArcGISforServerAdvancedEnterprise_Server.prvc -d /
 
 ENTRYPOINT /arcgis/server/startserver.sh && /bin/bash
