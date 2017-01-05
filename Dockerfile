@@ -1,12 +1,15 @@
 FROM centos:latest
 
-MAINTAINER @mraad <mraad@esri.com>
+# adapted from Mansour's dockerfile https://github.com/mraad/docker-arcgis/ 
+MAINTAINER @druidsmith <smith.davidg@epa.gov>
 
 RUN yum -y --nogpg install xorg-x11-server-Xvfb.x86_64 fontconfig freetype gettext less htop vim
 
 RUN mkdir /arcgis
-ADD Server_Ent_Adv.prvc /arcgis/
-ADD ArcGIS_for_Server_Linux_104_149446.tar.gz /arcgis/
+
+# put your install tgz and prvc in the same folder with the dockerfile when building - rename as needed
+ADD ArcGISforServerAdvancedEnterprise_Server.prvc /arcgis/
+ADD ArcGIS_for_Server_Linux_1041.tar.gz /arcgis/
 
 ENV USER arcgis
 ENV GROUP arcgis
