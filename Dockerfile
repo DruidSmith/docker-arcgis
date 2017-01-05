@@ -25,6 +25,6 @@ EXPOSE 6080 6443 4001 4002 4004
 
 USER $USER
 
-RUN /arcgis/ArcGISServer/Setup -m silent -l yes -a /arcgis/Server_Ent_Adv.prvc -d /
+RUN /arcgis/ArcGISServer/Setup -m silent -l yes -a /arcgis/ArcGISforServerAdvancedEnterprise_Server.prvc -d /
 
 ENTRYPOINT /arcgis/server/startserver.sh && /bin/bash
